@@ -1,0 +1,103 @@
+@import '../../constants.scss';
+
+.wrapper {
+    position: relative;
+    height: 100vh;
+    background-color: $turquoiseblue-color;
+
+    .imageBackground {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background-image: url("../../assets/shape_bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+            height: 60vw;
+            width: 60vw;
+            background-color: $kashmirblue-color;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        &__shapes {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-image: url("../../assets/circle_bg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &__hello {
+            position: absolute;
+            top: 15%;
+            left: 10%;
+            transform: translate(0, -50%);
+            font-size: 2.3rem;
+            font-weight: 600;
+            color: white;
+            text-shadow: 0px 3px 6px #00203F;
+        }
+
+        &__world {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(0, -50%);
+            font-size: 3.6rem;
+            font-weight: 600;
+            color: $aeroblue-color;
+            text-shadow: 0px 3px 6px #00203F;
+        }
+
+        &__whoiam {
+            position: absolute;
+            top: 40%;
+            left: 15%;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: white;
+            text-transform: uppercase;
+            text-shadow: 0px 3px 6px #00203F;
+
+            span:nth-child(1) {
+                display: block;
+                margin-bottom: 6px;
+            }
+
+            span:nth-child(2) {
+                font-size: 1.2rem;
+                font-weight: 400;
+            }
+        }
+
+
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+
+        img {
+            display: block;
+        }
+
+        p {
+            position: absolute;
+            bottom: 2px;
+            left: 2px;
+            font-size: 0.6rem;
+            font-weight: 600;
+            margin: 0;
+            color: $aeroblue-color
+        }
+    }
+
+
+}
