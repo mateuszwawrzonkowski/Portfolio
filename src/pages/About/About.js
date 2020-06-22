@@ -1,18 +1,12 @@
 import React from 'react';
 import styles from 'pages/About/About.module.scss';
+import Header from 'components/Header/Header';
 import faceImg from 'assets/face.png';
-const About = () => (
+
+const About = (props) => (
     <>
         <div className={styles.wrapper}>
-            <div className={styles.imageBackground}>
-                <div className={styles.imageBackground__circle}>
-                </div>
-                <div className={styles.imageBackground__hamburger}>
-                </div>
-                <div className={styles.imageBackground__shapes}>
-                    <p>About me</p>
-                </div>
-            </div>
+            <Header page="about"/>
             <div className={styles.about}>
                 <p>
                     Hello. My name is Mateusz.

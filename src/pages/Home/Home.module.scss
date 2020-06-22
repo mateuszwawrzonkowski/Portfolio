@@ -5,31 +5,13 @@
     height: 100vh;
     background-color: $turquoiseblue-color;
 
-    .imageBackground {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        background-image: url("../../assets/shape_bg.png");
-        background-repeat: no-repeat;
-        background-size: cover;
+    .header {
 
-        &__circle {
-            position: absolute;
-            top: 0;
-            left: 0;
-            transform: translate(-50%, -50%);
-            height: 60vw;
-            width: 60vw;
-            background-color: $kashmirblue-color;
-            border-radius: 50%;
-            z-index: 1;
-        }
-
-        &__shapes {
-            position: absolute;
+        &__bg {
+            position: relative;
             height: 100%;
             width: 100%;
-            background-image: url("../../assets/circle_bg.png");
+            background-image: url("../../assets/shape_bg.png");
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -76,8 +58,6 @@
                 font-weight: 400;
             }
         }
-
-
     }
 
     .footer {
@@ -98,6 +78,4 @@
             color: $aeroblue-color
         }
     }
-
-
 }
