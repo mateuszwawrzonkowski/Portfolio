@@ -1,0 +1,38 @@
+@import '../../constants.scss';
+
+.menuBg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    height: 60vw;
+    width: 60vw;
+    background-color: $kashmirblue-color;
+    border-radius: 50%;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.menuBgOpened {
+    @extend .menuBg;
+    height: 250vw;
+    width: 260vw;
+}
+
+.menuIcon {
+    position: fixed;
+    border: none;
+    background-color: transparent;
+    top: 4%;
+    left: 5%;
+    z-index: 999;
+
+    &:focus {
+        outline: transparent;
+    }
+
+    svg {
+        color: white;
+        font-size: 35px;
+    }
+}

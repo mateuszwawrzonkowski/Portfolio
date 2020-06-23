@@ -11,7 +11,6 @@ const navLinks = [
 
 const Navigation = () => {
 
-
     const navigation = navLinks.map(item => (
         <li key={item.name} className={styles.navItem}>
             <NavLink

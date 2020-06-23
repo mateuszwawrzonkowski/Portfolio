@@ -3,10 +3,10 @@ import styles from 'pages/About/About.module.scss';
 import Header from 'components/Header/Header';
 import faceImg from 'assets/face.png';
 
-const About = (props) => (
+const About = () => (
     <>
         <div className={styles.wrapper}>
-            <Header page="about"/>
+            <Header page="about" />
             <div className={styles.about}>
                 <p>
                     Hello. My name is Mateusz.

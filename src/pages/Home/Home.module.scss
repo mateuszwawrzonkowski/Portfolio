@@ -6,7 +6,6 @@
     background-color: $turquoiseblue-color;
 
     .header {
-
         &__bg {
             position: relative;
             height: 100%;
@@ -19,7 +18,7 @@
         &__hello {
             position: absolute;
             top: 15%;
-            left: 10%;
+            left: 15%;
             transform: translate(0, -50%);
             font-size: 2.3rem;
             font-weight: 600;
