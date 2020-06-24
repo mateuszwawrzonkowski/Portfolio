@@ -1,22 +1,6 @@
 @import '../../constants.scss';
 
 .wrapper {
-    height: 100vh;
-
-    .about {
-        p {
-            font-size: 1.8rem;
-            text-align: center;
-            font-weight: 600;
-            color: $midnight-color;
-            padding: 0 20px 20px 20px;
-        }
-    }
-
-    img {
-        display: block;
-        width: 50%;
-        margin: 0 auto 20px auto;
-    }
-
+    height: 100%;
+    background-color: $turquoiseblue-color;
 }
