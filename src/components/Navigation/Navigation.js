@@ -12,10 +12,10 @@ const navLinks = [
 const Navigation = () => {
 
     const navigation = navLinks.map(item => (
-        <li key={item.name} className={styles.navItem}>
+        <li key={item.name} className={styles.navigation__Item}>
             <NavLink
                 to={item.to}
-                className={styles.navItemLink}
+                className={styles.navigation__Item__Link}
                 activeClassName={styles.navItemLinkActive}>{item.name}</NavLink>
         </li >
     )
@@ -23,7 +23,7 @@ const Navigation = () => {
 
     return (
         <nav>
-            <ul className={styles.wrapper}>
+            <ul className={styles.navigation}>
                 {navigation}
             </ul>
         </nav>

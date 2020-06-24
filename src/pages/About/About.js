@@ -3,10 +3,20 @@ import styles from 'pages/About/About.module.scss';
 import Header from 'components/Header/Header';
 import faceImg from 'assets/face.png';
 
+const navLinks = [
+    { name: "home", to: "/" },
+    { name: "projects", to: "/projects" },
+    { name: "skills", to: "/skills" },
+    { name: "contact", to: "/contact" }
+]
+
 const About = () => (
     <>
         <div className={styles.wrapper}>
-            <Header page="about" />
+            <Header
+                page="about"
+                navLinks={navLinks}
+            />
             <div className={styles.about}>
                 <p>
                     Hello. My name is Mateusz.

@@ -1,9 +1,9 @@
 import React, { useMemo } from 'react';
 import styles from 'components/Header/Header.module.scss';
-import MenuIcon from 'components/MenuIcon/MenuIcon';
+import Menu from 'components/Menu/Menu';
 
 
-const Header = ({ page }) => {
+const Header = ({ page, navLinks }) => {
 
     const sectionTitle = useMemo(() => {
         switch (page) {
@@ -20,7 +20,7 @@ const Header = ({ page }) => {
 
     return (
         <>
-            {page === 'homepage' ? <MenuIcon /> : <MenuIcon showMenuButton />}
+            {page === 'homepage' ? <Menu navLinks={navLinks} /> : <Menu showMenuButton navLinks={navLinks} />}
             <div className={styles.header} style={page !== 'homepage' ? { height: '40vh' } : null}>
                 {page === 'homepage' ? <div className={styles.header__bottomShape} /> : null}
                 <div className={styles.header__topShapes} />
