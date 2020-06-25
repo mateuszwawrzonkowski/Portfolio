@@ -19,7 +19,7 @@ const projectsItems = [
         technologies: ["Html", "Css", "Javascript", "React", "Css Modules", "Eslint", "AdobeXD"]
     },
     {
-        name: "portfolio",
+        name: "jakis projekt",
         description: "My portfolio, work in progress",
         img: portfolio,
         technologies: ["Html", "Css", "Javascript", "React", "Css Modules", "Eslint", "AdobeXD"]
@@ -47,6 +47,7 @@ const Projects = () => {
                 <Header
                     page="project"
                     navLinks={navLinks}
+                    headerHeight="40vh"
                 />
                 <div className={styles.projects}>
                     {projects}

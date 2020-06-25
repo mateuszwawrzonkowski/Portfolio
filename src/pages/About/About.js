@@ -16,6 +16,7 @@ const About = () => (
             <Header
                 page="about"
                 navLinks={navLinks}
+                headerHeight="40vh"
             />
             <div className={styles.about}>
                 <p>
