@@ -3,35 +3,57 @@
 
 .header {
     position: relative;
-    height: 60vh;
+    height: 100%;
     width: 100%;
+    overflow: hidden;
 
-    &__bottomShape {
+    &__background {
         position: absolute;
-        height: 100%;
-        width: 100%;
-        background-image: url("../../assets/shape_bg.png");
-        background-repeat: no-repeat;
-        background-size: cover;
+        top: 0;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        height: 100vh;
+        width: 250vw;
+        background-color: $cello-color;
+        border: 15px solid $sanjuan-color;
+        border-radius: 0 50% 50% 50%;
+        z-index: 0;
+        transition: 0.3s;
+
+        @include mq(tablet) {
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+            height: 250vh;
+            width: 125vw;
+        }
+
+        @include mq(desktop-small) {
+            border: 30px solid $sanjuan-color;
+        }
     }
 
-    &__topShapes {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background-image: url("../../assets/circle_bg.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    &__text {
+    &__pageTitle {
         position: absolute;
         top: 20vh;
-        left: 6%;
+        left: 10vw;
         transform: translate(0, -50%);
         font-size: 3.6rem;
         font-weight: 600;
         color: white;
         text-shadow: 0px 3px 6px #00203F;
+
+        @include mq(smartphone) {
+            top: 22vh;
+            left: 18vw;
+            font-size: 4.4rem;
+        }
+
+        @include mq(smartphone-large) {
+            top: 20vh;
+            left: 25vw;
+            font-size: 4.8rem;
+        }
+
     }
 }

@@ -1,31 +1,84 @@
 @import '../../constants.scss';
 
-.menuBg {
+.menu {
     position: fixed;
     top: 0;
     left: 0;
-    transform: translate(-50%, -50%);
-    height: 60vw;
-    width: 60vw;
+    height: 80px;
+    width: 80px;
     background-color: $kashmirblue-color;
-    border-radius: 50%;
+    border-radius: 0 0 80px;
     z-index: 1;
     transition: 0.3s;
+
+    @include mq(smartphone) {
+        height: 100px;
+        width: 100px;
+        border-radius: 0 0 100px;
+    }
+
+    @include mq(smartphone-large) {
+        height: 120px;
+        width: 120px;
+        border-radius: 0 0 120px;
+    }
+
+
+    @include mq(tablet) {}
 
     .navigation {
         display: none;
     }
 }
 
-.menuBgOpened {
-    @extend .menuBg;
-    height: 250vw;
-    width: 260vw;
+.menuOpened {
+    @extend .menu;
+    height: 70vh;
+    width: 100vw;
+    border-radius: 0 0 120vw;
+    z-index: 998;
+
+    @include mq(smartphone) {
+        height: 70vh;
+        width: 100vw;
+        font-size: 4.4rem;
+    }
 
     .navigation {
-        display: block;
+        position: absolute;
+        top: 30vh;
+        left: 35vw;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         animation-name: fadeIn;
         animation-duration: 0.6s;
+
+        &__Item {
+            padding: 9px 0;
+            list-style: none;
+
+            &__Link {
+                display: block;
+                color: white;
+                text-decoration: none;
+                font-size: 3.4rem;
+                font-weight: 600;
+                text-shadow: 0px 3px 6px #00203F;
+                transition: .4s;
+
+                @include mq(smartphone) {
+                    font-size: 4.4rem;
+                }
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
     }
 }
 
@@ -33,9 +86,20 @@
     position: fixed;
     border: none;
     background-color: transparent;
-    top: 4%;
-    left: 5%;
+    top: 30px;
+    left: 30px;
+    transform: translate(-50%, -50%);
     z-index: 999;
+
+    @include mq(smartphone) {
+        top: 40px;
+        left: 40px;
+    }
+
+    @include mq(smartphone-large) {
+        top: 50px;
+        left: 50px;
+    }
 
     &:focus {
         outline: transparent;
@@ -43,36 +107,14 @@
 
     svg {
         color: white;
-        font-size: 35px;
-    }
-}
+        font-size: 3rem;
 
-.navigation {
-    position: fixed;
-    top: 60%;
-    left: 55%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        @include mq(smartphone) {
+            font-size: 3.6rem;
+        }
 
-    &__Item {
-        padding: 9px 0;
-        list-style: none;
-
-        &__Link {
-            display: block;
-            color: white;
-            text-decoration: none;
-            font-size: 3.1rem;
-            font-weight: 600;
-            text-shadow: 0px 3px 6px #00203F;
-            transition: .4s;
-
-            &:hover {
-                transform: scale(1.2);
-            }
+        @include mq(smartphone-large) {
+            font-size: 4.2rem;
         }
     }
 }

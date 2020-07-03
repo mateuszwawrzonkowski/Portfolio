@@ -12,7 +12,7 @@ const Menu = ({ showMenuButton, navLinks }) => {
         setOpen(!open);
     }
 
-    const menuBgClass = open ? styles.menuBgOpened : styles.menuBg;
+    const menuClass = open ? styles.menuOpened : styles.menu;
 
     const navigation = navLinks.map(item => (
         <li key={item.name} className={styles.navigation__Item}>
@@ -26,25 +26,27 @@ const Menu = ({ showMenuButton, navLinks }) => {
 
     return (
         <>
-            {
-                showMenuButton ?
-                    <button onClick={handleClick} className={styles.menuButton} >
-                        {open ?
-                            <FontAwesomeIcon icon={faTimes} />
-                            :
-                            <FontAwesomeIcon icon={faBars} />
-                        }
-                    </button>
-                    : null
-            }
-            <div className={menuBgClass} >
-                <nav>
-                    <ul className={styles.navigation}>
-                        {navigation}
-                    </ul>
-                </nav>
+            <div className={styles.wrapper}>
+                {
+                    showMenuButton ?
+                        <button onClick={handleClick} className={styles.menuButton} >
+                            {open ?
+                                <FontAwesomeIcon icon={faTimes} />
+                                :
+                                <FontAwesomeIcon icon={faBars} />
+                            }
+                        </button>
+                        : null
+                }
+                <div className={menuClass} >
+                    <nav>
+                        <ul className={styles.navigation}>
+                            {navigation}
+                        </ul>
+                    </nav>
+                </div>
+                <div className={styles.circle} />
             </div>
-
         </>
     )
 }

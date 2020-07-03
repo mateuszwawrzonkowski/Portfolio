@@ -2,5 +2,13 @@
 
 .wrapper {
     height: 100%;
-    background-color: $turquoiseblue-color;
+    background: $gradientBackground-color;
+
+    Header {
+        height: 45vh;
+
+        div {
+            height: 75vh;
+        }
+    }
 }

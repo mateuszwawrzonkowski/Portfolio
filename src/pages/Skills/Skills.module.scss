@@ -1,68 +1,50 @@
 @import '../../constants.scss';
 
+
 .wrapper {
-    position: relative;
-    height: 100%;
     background: $gradientBackground-color;
-    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .circle {
-        position: fixed;
-        transform: translate(-50%, -50%);
-        height: 70vw;
-        width: 70vw;
-        background-color: transparent;
-        border: 5px dashed $kashmirblue-color;
-        border-radius: 50%;
-    }
+    .skillSections {
+        padding: 100px 0 100px 0;
 
-    ul {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 0 10px;
-        margin: 0;
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0 10px;
 
-        li {
-            list-style: none;
+            li {
+                list-style: none;
 
-            figure {
-                margin: 10px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
+                figure {
+                    margin: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
 
-            figcaption {
-                text-align: center;
-                font-size: 1.4rem;
-                font-weight: 500;
-                text-transform: uppercase;
-                color: white;
-                text-shadow: 0px 3px 6px #00203F;
+                figcaption {
+                    text-align: center;
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    color: white;
+                    text-shadow: 0px 3px 6px #00203F;
+                }
             }
         }
-    }
 
-    ul:last-of-type {
-        margin-bottom: 30px;
-    }
-
-    h1 {
-        text-align: center;
-        color: white;
-        font-size: 3rem;
-        text-shadow: 0px 3px 6px #00203F;
-        margin: 30px 0 10px 0;
-    }
-
-    .footer {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-
-        P {
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+            text-shadow: 0px 3px 6px #00203F;
             margin: 0;
+            padding-top: 30px;
         }
     }
 }

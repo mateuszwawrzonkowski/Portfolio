@@ -1,6 +1,7 @@
 /*-----------------BREAKPOINTS-----------------*/
 
 $breakpoints: (smartphone: (min-width: 460px),
+    tall-smartphone:(min-height:650px),
     smartphone-large: (min-width: 640px),
     tablet:(min-width: 800px),
     tablet-large:(min-width: 1024px),
@@ -27,23 +28,29 @@ $midnight-color: #00203F;
 $turquoiseblue-color: #63EAB8;
 $aeroblue-color: #BBFFE6;
 $kashmirblue-color: #496F95;
+$cello-color: #224567;
+$sanjuan-color: #315679;
 $gradientBackground-color: linear-gradient(135deg, rgba(0, 255, 168, 1) 0%, rgba(114, 194, 255, 1) 100%);
 
 /*----------------ANIMATIONS-----------------*/
 
 @keyframes fadeIn {
     0% {
-        left: 50%;
+        left: 30vw;
         opacity: 0;
     }
 
     49% {
-        left: 50%;
+        left: 30vw;
         opacity: 0;
     }
 
     100% {
-        left: 55%;
+        left: 35vw;
         opacity: 1;
     }
 }
+
+/*----------------VARIABLES-----------------*/
+
+$menu-size: 25vw;

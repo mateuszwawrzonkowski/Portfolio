@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from 'pages/Skills/Skills.module.scss';
-import Header from 'components/Header/Header';
+import Menu from 'components/Menu/Menu';
 import Skill from 'components/Skill/Skill';
 
 const navLinks = [
@@ -15,7 +15,7 @@ const iconSize = 60;
 const SkillSections = [
     {
         title: "Skills",
-        Icons: [{ name: "html5", icon: `https://img.icons8.com/color/${iconSize}/000000/html-5.png`, zupa: { ikona: 5, japa: 2 } },
+        Icons: [{ name: "html5", icon: `https://img.icons8.com/color/${iconSize}/000000/html-5.png` },
         { name: "css3", icon: `https://img.icons8.com/color/${iconSize}/000000/css3.png` },
         { name: "sass", icon: `https://img.icons8.com/color/${iconSize}/000000/sass.png` },
         { name: "javascript es6", icon: `https://img.icons8.com/color/${iconSize}/000000/javascript.png` },
@@ -58,15 +58,12 @@ const Skills = () => {
 
     return (
         <>
+
             <div className={styles.wrapper}>
-                <div className={styles.circle}></div>
-                <Header
-                    page="skill"
-                    navLinks={navLinks}
-                    noBg
-                    headerHeight="15vh"
-                />
-                {SkillsSections}
+                <Menu navLinks={navLinks} showMenuButton />
+                <div className={styles.skillSections}>
+                    {SkillsSections}
+                </div>
             </div>
         </>
     )

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from 'pages/About/About.module.scss';
-import Header from 'components/Header/Header';
+import Menu from 'components/Menu/Menu';
 import faceImg from 'assets/face.png';
 
 const navLinks = [
@@ -12,13 +12,11 @@ const navLinks = [
 
 const About = () => (
     <>
+
         <div className={styles.wrapper}>
-            <Header
-                page="about"
-                navLinks={navLinks}
-                headerHeight="40vh"
-            />
+            <Menu navLinks={navLinks} showMenuButton />
             <div className={styles.about}>
+                <h1>about me</h1>
                 <p>
                     Hello. My name is Mateusz.
                     I'm third year student of
@@ -37,7 +35,9 @@ const About = () => (
                 </p>
             </div>
             <div className={styles.face}>
-                <img src={faceImg} alt="face" />
+                <div className={styles.circle}>
+                    <img src={faceImg} alt="face" />
+                </div>
             </div>
         </div>
     </>

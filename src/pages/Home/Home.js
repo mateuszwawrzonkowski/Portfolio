@@ -1,8 +1,9 @@
 import React from 'react';
 import Header from 'components/Header/Header';
+import Menu from 'components/Menu/Menu';
 import Navigation from 'components/Navigation/Navigation';
 import styles from 'pages/Home/Home.module.scss';
-import footerImg from 'assets/Footer_320.png';
+import footerImg from 'assets/Path 7.png';
 
 const navLinks = [
     { name: "about me", to: "/about" },
@@ -14,12 +15,13 @@ const navLinks = [
 const Home = () => (
     <>
         <div className={styles.wrapper}>
+            <Menu navLinks={navLinks} />
             <Header
                 page="homepage"
                 navLinks={navLinks}
             />
-            <p className={styles.header__hello}>HELLO! Welcome in my... </p>
-            <p className={styles.header__world}>world </p>
+            <p className={styles.header__hi}>Hi! Welcome on my... </p>
+            <p className={styles.header__page}>page</p>
             <p className={styles.header__whoiam}>
                 <span>Mateusz Wawrzonkowski</span>
                 <span>Junior frontend developer</span>

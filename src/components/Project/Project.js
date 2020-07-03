@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from 'components/Project/Project.module.scss';
-const Project = ({ key, name, img, description, technologies }) => {
+const Project = ({ name, img, description, technologies }) => {
 
-    const technologyItems = technologies.map(technology => <li key={key}>{technology}</li>);
+    const technologyItems = technologies.map(technology =>
+        <li key={technology + name}>{technology}</li>);
 
     return (
         <>
@@ -20,7 +21,6 @@ const Project = ({ key, name, img, description, technologies }) => {
                             </ul>
                         </div>
                     </figcaption>
-
                 </figure>
             </div>
         </>
