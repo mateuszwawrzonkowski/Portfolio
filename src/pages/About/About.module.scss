@@ -3,18 +3,29 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     background: linear-gradient(180deg, rgba(0, 255, 168, 1) 20%, rgba(114, 194, 255, 1) 100%);
+
+    @include mq(smartphone-large) {
+        flex-direction: row;
+        background: linear-gradient(90deg, rgba(0, 255, 168, 1) 25%, rgba(114, 194, 255, 1) 100%);
+    }
 
     .about {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
+        align-items: center;
         background-color: $midnight-color;
         color: white;
         height: 100vh;
         border-bottom: 10px solid #224567;
+
+        @include mq(smartphone-large) {
+            width: 50vw;
+            border-bottom: none;
+            border-right: 10px solid #224567;
+        }
 
         h1 {
             color: white;
@@ -23,13 +34,44 @@
         }
 
         p {
-            width: 80%;
+            width: 70%;
             font-size: 1.2rem;
-            font-weight: 600;
+            font-weight: 400;
             text-align: justify;
+            word-spacing: 3px;
+
+            @include mq(smartphone) {
+                font-size: 1.4rem;
+            }
+
+            @include mq(smartphone-medium) {
+                font-size: 1.6rem;
+            }
 
             @include mq(smartphone-large) {
+                font-size: 0.9rem;
+            }
+
+            @include mq(tablet) {
+                font-size: 1rem;
+            }
+
+            @include mq(tablet-large) {
+                font-size: 1.7rem;
+            }
+
+            @include mq(desktop-small) {
+                font-size: 1.8rem;
+            }
+
+            @include mq(desktop-large) {
+                width: 60%;
                 font-size: 2rem;
+            }
+
+            a {
+                color: $turquoiseblue-color;
+                text-decoration: none;
             }
         }
     }
@@ -38,19 +80,32 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vw;
+        height: 100vh;
         width: 100vw;
+
+        @include mq(smartphone-large) {
+            width: 50vw;
+        }
 
         .circle {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 80%;
-            width: 80%;
+            height: 80vw;
+            width: 80vw;
             overflow: hidden;
             border: 1px dashed #BEDEFF;
             border-radius: 50%;
 
+            @include mq(smartphone-large) {
+                height: 70vh;
+                width: 70vh;
+            }
+
+            @include mq(tablet-large) {
+                height: 40vh;
+                width: 40vh;
+            }
 
             img {
                 height: 80%;

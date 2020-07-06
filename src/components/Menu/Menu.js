@@ -27,18 +27,19 @@ const Menu = ({ showMenuButton, navLinks }) => {
     return (
         <>
             <div className={styles.wrapper}>
-                {
-                    showMenuButton ?
-                        <button onClick={handleClick} className={styles.menuButton} >
-                            {open ?
-                                <FontAwesomeIcon icon={faTimes} />
-                                :
-                                <FontAwesomeIcon icon={faBars} />
-                            }
-                        </button>
-                        : null
-                }
+
                 <div className={menuClass} >
+                    {
+                        showMenuButton ?
+                            <button onClick={handleClick} className={styles.menuButton} >
+                                {open ?
+                                    <FontAwesomeIcon icon={faTimes} />
+                                    :
+                                    <FontAwesomeIcon icon={faBars} />
+                                }
+                            </button>
+                            : null
+                    }
                     <nav>
                         <ul className={styles.navigation}>
                             {navigation}

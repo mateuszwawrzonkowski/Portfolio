@@ -27,11 +27,11 @@ const SkillSections = [
         title: "Tools",
         Icons: [
             { name: "visual studio code", icon: `https://img.icons8.com/fluent/${iconSize}/000000/visual-studio-code-2019.png` },
+            { name: "git", icon: `https://img.icons8.com/color/${iconSize}/000000/git.png` },
+            { name: "github", icon: `https://img.icons8.com/fluent/${iconSize}/000000/github.png` },
             { name: "adobe xd", icon: `https://img.icons8.com/color/${iconSize}/000000/adobe-xd.png` },
             { name: "adobe photoshop", icon: `https://img.icons8.com/fluent/${iconSize}/000000/adobe-photoshop.png` },
-            { name: "npm", icon: `https://img.icons8.com/color/${iconSize}/000000/npm.png` },
-            { name: "git", icon: `https://img.icons8.com/color/${iconSize}/000000/git.png` },
-            { name: "github", icon: `https://img.icons8.com/fluent/${iconSize}/000000/github.png` }
+            { name: "npm", icon: `https://img.icons8.com/color/${iconSize}/000000/npm.png` }
         ]
     },
 

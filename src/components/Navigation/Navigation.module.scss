@@ -1,88 +1,100 @@
 @import '../../constants.scss';
 
-.navigation {
-    position: absolute;
-    top: 55vh;
-    left: 50vw;
-    transform: translateX(-50%);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+nav {
+    .navigation {
+        position: absolute;
+        top: 55vh;
+        left: 50vw;
+        transform: translateX(-50%);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 999;
 
-    @include mq(tall-smartphone) {
-        top: 60vh;
-    }
-
-    @include mq(tablet) {
-        transform: translateX(0);
-        top: 35vh;
-        left: 68vw;
-    }
-
-    @include mq(tablet-large) {
-        top: 35vh;
-    }
-
-    @include mq(desktop-small) {
-        top: 30vh;
-    }
-
-    &__Item {
-        padding: 9px 0;
-        list-style: none;
-
-        @include mq(tablet) {
-            padding: 12px 0;
+        @include mq(smartphone) {
+            top: 58vh;
+            left: 50vw;
         }
 
-        @include mq(tablet-large) {
-            padding: 16px 0;
+        @include mq(smartphone-large) {
+            transform: translateX(0);
+            top: 50%;
+            left: 68vw;
+            transform: translateY(-50%);
+            align-items: flex-end;
         }
 
         @include mq(desktop-small) {
-            line-height: 80px;
+            top: 30vh;
         }
 
-        &__Link {
-            display: block;
-            color: white;
-            text-decoration: none;
-            font-size: 3rem;
-            font-weight: 600;
-            text-shadow: 0px 3px 6px #00203F;
-            transition: .4s;
+        @include mq(tablet-large) {
+            left: 65%;
+        }
 
-            @include mq(smartphone) {
-                font-size: 3.4rem;
-            }
+        @include mq(desktop-small) {
+            left: 68%;
+            top: 50%;
+        }
 
-            @include mq(tall-smartphone) {
-                font-size: 3.6rem;
-            }
-
-            @include mq(smartphone-large) {
-                font-size: 3.8rem;
-            }
+        &__Item {
+            padding: 9px 0;
+            list-style: none;
 
             @include mq(tablet) {
-                font-size: 4.2rem;
+                padding: 12px 0;
             }
 
             @include mq(tablet-large) {
-                font-size: 4.6rem;
+                padding: 16px 0;
             }
 
             @include mq(desktop-small) {
-                font-size: 5.6rem;
+                line-height: 80px;
             }
 
-            &:hover {
-                transform: scale(1.2);
+            &__Link {
+                display: block;
+                color: white;
+                text-decoration: none;
+                font-size: 3rem;
+                font-weight: 600;
+                text-shadow: 0px 3px 6px #00203F;
+                transition: .4s;
+
+                @include mq(smartphone) {
+                    font-size: 3.4rem;
+                }
+
+                @include mq(smartphone-medium) {
+                    padding: 2px;
+                    font-size: 4.6rem;
+                }
+
+                @include mq(smartphone-medium) {
+                    padding: 0;
+                    font-size: 3.4rem;
+                }
+
+                @include mq(tablet) {
+                    font-size: 4.2rem;
+                }
+
+                @include mq(tablet-large) {
+                    font-size: 6rem;
+                }
+
+                @include mq(desktop-small) {
+                    padding: 5px;
+                    font-size: 6.4rem;
+                }
+
+                &:hover {
+                    transform: scale(1.2);
+                }
             }
         }
     }
-
-
 }

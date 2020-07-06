@@ -1,6 +1,5 @@
 import React, { useMemo } from 'react';
 import styles from 'components/Header/Header.module.scss';
-
 const Header = ({ page, noBg }) => {
 
     const sectionTitle = useMemo(() => {
@@ -21,8 +20,11 @@ const Header = ({ page, noBg }) => {
     return (
         <>
             <header className={styles.header}>
-                {noBg ? null : <div className={styles.header__background} />}
+                {noBg ? null : <div className={styles.header__background}>
+
+                </div>}
                 {page !== 'homepage' && <p className={styles.header__pageTitle} >{sectionTitle}</p>}
+
             </header>
         </>
     )

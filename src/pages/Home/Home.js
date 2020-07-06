@@ -3,7 +3,7 @@ import Header from 'components/Header/Header';
 import Menu from 'components/Menu/Menu';
 import Navigation from 'components/Navigation/Navigation';
 import styles from 'pages/Home/Home.module.scss';
-import footerImg from 'assets/Path 7.png';
+import footerImg from 'assets/Footer.png';
 
 const navLinks = [
     { name: "about me", to: "/about" },
@@ -18,7 +18,6 @@ const Home = () => (
             <Menu navLinks={navLinks} />
             <Header
                 page="homepage"
-                navLinks={navLinks}
             />
             <p className={styles.header__hi}>Hi! Welcome on my... </p>
             <p className={styles.header__page}>page</p>

@@ -30,9 +30,11 @@ const About = () => (
                     Also I love cooking, good food,
                     mountains and kittys.
                     <br /><br />
+                    If you want to check some of my 3d projects vistit my   <a href="https://www.deviantart.com/wawko2">deviantart site</a>.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sit harum eos. Hic labore quo et voluptate natus voluptatum ipsa, est, maxime libero, tempora excepturi maiores magnam sed? Necessitatibus, quidem?
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi officiis quo fuga iure excepturi doloribus repellat nostrum alias distinctio voluptatem molestiae ut ea possimus, doloremque nulla dicta praesentium inventore laboriosam.
                 </p>
+
             </div>
             <div className={styles.face}>
                 <div className={styles.circle}>

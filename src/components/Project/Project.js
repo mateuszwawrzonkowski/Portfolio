@@ -7,7 +7,7 @@ const Project = ({ name, img, description, technologies }) => {
 
     return (
         <>
-            <div className={styles.wrapper}>
+            <div className={styles.project}>
                 <figure>
                     <div className={styles.projectImg}>
                         <img src={img} alt={name} />

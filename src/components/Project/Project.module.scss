@@ -1,64 +1,79 @@
 @import '../../constants.scss';
 
-.wrapper {
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    padding: 10px 0;
-}
-
-figure {
+.project {
     max-width: 480px;
+    width: 80%;
 
-    .projectImg {
-        img {
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px 3px #00203F;
-            height: 100%;
-            width: 100%;
-        }
-    }
+    figure {
+        margin: 10px;
 
-    .figcaption {
-        background-color: $midnight-color;
-        height: 100%;
-        width: 100%;
-        padding: 5px 0;
-        border-radius: 10px;
-        color: white;
-        box-shadow: 0px 0px 10px 3px #00203F;
-        text-align: center;
+        .projectImg {
+            position: relative;
+            overflow: hidden;
 
-        h1 {
-            margin: 0;
-            color: $aeroblue-color;
-        }
 
-        p {
-            font-size: 1.4rem;
-            color: $aeroblue-color;
-        }
-
-        ul {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            padding: 0;
-
-            li {
-                margin: 5px;
-                font-size: 1rem;
-                font-weight: 700;
-                background-color: $aeroblue-color;
-                color: $midnight-color;
+            img {
+                width: 100%;
                 border-radius: 10px;
-                padding: 5px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.6);
+                border-radius: 10px 10px 50% 50%;
+                height: 50%;
+                width: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -180%);
+                transition: 0.3s;
+                opacity: 0;
+            }
+
+            &:hover::before {
+                transform: translate(-50%, -100%);
+                opacity: 1;
+            }
+        }
+
+        .figcaption {
+            background-color: $midnight-color;
+            padding: 10px 0;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            color: $aeroblue-color;
+            cursor: default;
+
+            h1 {
+                margin: 0;
+            }
+
+            p {
+                font-size: 1.4rem;
+            }
+
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 0;
                 list-style: none;
-                text-transform: uppercase;
 
-
+                li {
+                    margin: 5px;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    background-color: $aeroblue-color;
+                    color: $midnight-color;
+                    border-radius: 10px;
+                    padding: 5px;
+                    text-transform: uppercase;
+                }
             }
         }
     }
+
 }

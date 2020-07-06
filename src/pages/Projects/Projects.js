@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from 'pages/Projects/Projects.module.scss'
-import Header from 'components/Header/Header';
 import Menu from 'components/Menu/Menu';
 import Project from 'components/Project/Project';
 import portfolio from 'assets/Projects/portfolio.png';
@@ -45,10 +44,6 @@ const Projects = () => {
         <>
             <div className={styles.wrapper}>
                 <Menu navLinks={navLinks} showMenuButton />
-                <Header
-                    page="project"
-                    navLinks={navLinks}
-                />
                 <div className={styles.projects}>
                     {projects}
                 </div>
