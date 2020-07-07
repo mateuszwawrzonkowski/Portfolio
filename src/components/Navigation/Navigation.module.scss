@@ -20,7 +20,7 @@ nav {
 
         @include mq(smartphone-large) {
             transform: translate(0, -50%);
-            top: 50%;
+            top: 50vh;
             left: 68vw;
             align-items: flex-end;
             animation-name: fadeInRight;
@@ -32,12 +32,12 @@ nav {
         }
 
         @include mq(tablet-large) {
-            left: 65%;
+            left: 65vw;
         }
 
         @include mq(desktop-small) {
-            left: 68%;
-            top: 50%;
+            left: 68vw;
+            top: 50vh;
         }
 
         &__Item {

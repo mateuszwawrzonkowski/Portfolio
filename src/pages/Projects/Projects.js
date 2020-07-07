@@ -37,8 +37,8 @@ const projectsItems = [
         description: "Work in progress. The application will allow to add restaurants to list and mark what places you visited, what restaurant you like or dislike.",
         img: wip,
         technologies: ["Html", "Css", "Javascript", "React", "React Redux", "Styled Componenets"],
-        githubLink: "https://github.com/mateuszwawrzonkowski/Portfolio",
-        pageLink: "https://mateuszwawrzonkowski.github.io/Portfolio/#/"
+        githubLink: "https://github.com/",
+        pageLink: "http://mwawrzonkowski.pl/#/projects"
     },
 ]
 

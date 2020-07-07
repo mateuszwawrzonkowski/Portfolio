@@ -22,7 +22,6 @@ const Header = ({ page, noBg }) => {
             <header className={styles.header}>
                 {noBg ? null : <div className={styles.header__background} />}
                 {page !== 'homepage' && <p className={styles.header__pageTitle} >{sectionTitle}</p>}
-
             </header>
         </>
     )

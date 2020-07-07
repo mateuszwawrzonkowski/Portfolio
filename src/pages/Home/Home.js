@@ -16,9 +16,7 @@ const Home = () => (
     <>
         <div className={styles.wrapper}>
             <Menu navLinks={navLinks} />
-            <Header
-                page="homepage"
-            />
+            <Header page="homepage" />
             <p className={styles.header__hi}>Hi! Welcome on my... </p>
             <p className={styles.header__page}>page</p>
             <p className={styles.header__whoiam}>

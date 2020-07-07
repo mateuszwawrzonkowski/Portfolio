@@ -38,7 +38,7 @@
             font-size: 1.2rem;
             font-weight: 400;
             text-align: justify;
-            word-spacing: 3px;
+            line-height: 140%;
 
             @include mq(smartphone) {
                 font-size: 1.4rem;
@@ -69,8 +69,14 @@
                 font-size: 2rem;
             }
 
-            a {
+            a:first-of-type {
                 color: $turquoiseblue-color;
+                text-decoration: none;
+                font-size: 1.1em;
+            }
+
+            a:last-of-type {
+                color: #05CC46;
                 text-decoration: none;
             }
         }
@@ -107,6 +113,11 @@
                 width: 40vh;
             }
 
+            @include mq(desktop-large) {
+                height: 45vh;
+                width: 45vh;
+            }
+
             &__border {
                 position: absolute;
                 background-color: transparent;
@@ -118,11 +129,11 @@
                 @include mq(tablet) {
                     animation: rotate 60s linear infinite;
                 }
-
             }
 
             img {
-                height: 80%;
+                border-radius: 50%;
+                height: 90%;
             }
         }
     }

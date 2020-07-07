@@ -17,15 +17,10 @@ const About = () => (
             <div className={styles.about}>
                 <h1>about me</h1>
                 <p>
-                    Hello. My name is Mateusz.
-                    I'm currently third year student of
-                    computer science with specialization in Internet engineering and I work in big corporation as Sales Support Bussines Specialist but I decided to change ma career. I started
-                    programming about two years
-                    ago and it gives me a lot of satisfaction. My passion is also
-                    3d computer graphic. If you want to check some of my 3d projects visit my <a href="https://www.deviantart.com/wawko2">DeviantArt site</a>.
+                    Hi. My name is Mateusz. I'm a third year student in computer science with a specialization in Internet engineering. I worked for Sony Polska as a Sales Specialist and then as a Business Sales Support Specialist, but I decided to change my career. Computers have always been my passion - I started with 3D computer graphics, then I discovered programming. It gives me a lot of satisfaction, so I decided to combine my professional career with it.
+                    On this page you can check my <a href="">projects</a> and if you want to check some of my 3d projects visit my <a href="https://www.deviantart.com/wawko2">DeviantArt</a> page.
                     <br /><br />
-                    Also I love cooking, good food,
-                    mountains and kittys.
+                    I also love to cook, eat well and travel. Have a nice day!
                 </p>
 
             </div>

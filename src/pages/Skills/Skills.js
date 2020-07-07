@@ -64,6 +64,9 @@ const Skills = () => {
                 <div className={styles.skillSections}>
                     {SkillsSections}
                 </div>
+                <div className={styles.footer}>
+                    <a href="https://icons8.com/icon/59898/css-filetype">icons by Icons8</a>
+                </div>
             </div>
         </>
     )
