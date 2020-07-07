@@ -3,39 +3,51 @@
 .project {
     max-width: 480px;
     width: 80%;
+    margin-bottom: 50px;
+
+    @include mq(smartphone-large) {
+        margin-bottom: 0;
+    }
 
     figure {
         margin: 10px;
+
 
         .projectImg {
             position: relative;
             overflow: hidden;
 
 
+            .buttons {
+                position: absolute;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 50%;
+                width: 100%;
+                top: -50%;
+                background-color: rgba($color: $kashmirblue-color, $alpha: 0.6);
+                border-radius: 10px 10px 50% 50%;
+                transition: 0.3s;
+
+                @media (pointer: coarse) {
+                    top: 0%;
+                }
+
+                a {
+                    font-size: 5rem;
+                    color: $aeroblue-color;
+                }
+            }
+
             img {
                 width: 100%;
                 border-radius: 10px;
             }
 
-            &::before {
-                content: "";
-                position: absolute;
-                background-color: rgba(0, 0, 0, 0.6);
-                border-radius: 10px 10px 50% 50%;
-                height: 50%;
-                width: 100%;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -180%);
-                transition: 0.3s;
-                opacity: 0;
-            }
-
-            &:hover::before {
-                transform: translate(-50%, -100%);
-                opacity: 1;
-            }
         }
+
+
 
         .figcaption {
             background-color: $midnight-color;
@@ -76,4 +88,9 @@
         }
     }
 
+    figure:hover {
+        .buttons {
+            top: 0;
+        }
+    }
 }

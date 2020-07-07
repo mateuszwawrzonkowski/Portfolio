@@ -11,6 +11,7 @@
     box-shadow: 0px 0px 15px 1px rgba(99, 234, 184, 1);
     z-index: 100;
     transition: 0.3s;
+    // margin: 0;
 
     @include mq(smartphone) {
         height: 100px;
@@ -45,6 +46,8 @@
 
     .navigation {
         display: none;
+        margin: 0;
+        padding: 0;
     }
 
     .menuButton {
@@ -121,11 +124,6 @@
     border-radius: 0 0 120vw;
     z-index: 998;
 
-    @include mq(smartphone) {
-        height: 70vh;
-        width: 100vw;
-    }
-
     @include mq(smartphone-large) {
         height: 80vh;
         width: 45vw;
@@ -198,7 +196,12 @@
                 transition: .4s;
 
                 @include mq(smartphone) {
+                    font-size: 3.6rem;
+                }
+
+                @include mq(smartphone-medium) {
                     font-size: 4.4rem;
+                    padding: 5px;
                 }
 
                 @include mq(smartphone-large) {
@@ -206,7 +209,6 @@
                 }
 
                 @include mq(tablet-large) {
-                    padding: 5px;
                     font-size: 4.6rem;
                 }
 

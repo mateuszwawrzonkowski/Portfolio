@@ -12,7 +12,6 @@ const navLinks = [
 
 const About = () => (
     <>
-
         <div className={styles.wrapper}>
             <Menu navLinks={navLinks} showMenuButton />
             <div className={styles.about}>
