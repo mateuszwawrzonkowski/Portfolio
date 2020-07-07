@@ -19,11 +19,12 @@ nav {
         }
 
         @include mq(smartphone-large) {
-            transform: translateX(0);
+            transform: translate(0, -50%);
             top: 50%;
             left: 68vw;
-            transform: translateY(-50%);
             align-items: flex-end;
+            animation-name: fadeInRight;
+            animation-duration: 1s;
         }
 
         @include mq(desktop-small) {

@@ -18,24 +18,20 @@ const About = () => (
                 <h1>about me</h1>
                 <p>
                     Hello. My name is Mateusz.
-                    Site in progress...
-                    {/* I'm third year student of
-                    computer science. I started
+                    I'm currently third year student of
+                    computer science with specialization in Internet engineering and I work in big corporation as Sales Support Bussines Specialist but I decided to change ma career. I started
                     programming about two years
-                    ago. Before my passion was
-                    computer graphic but I decided
-                    to connect my interest in
-                    graphic and programming.
+                    ago and it gives me a lot of satisfaction. My passion is also
+                    3d computer graphic. If you want to check some of my 3d projects visit my <a href="https://www.deviantart.com/wawko2">DeviantArt site</a>.
                     <br /><br />
                     Also I love cooking, good food,
                     mountains and kittys.
-                    <br /><br /> */}
-                    {/* If you want to check some of my 3d projects vistit my   <a href="https://www.deviantart.com/wawko2">deviantart site</a>. */}
                 </p>
 
             </div>
             <div className={styles.face}>
                 <div className={styles.circle}>
+                    <div className={styles.circle__border} />
                     <img src={faceImg} alt="face" />
                 </div>
             </div>

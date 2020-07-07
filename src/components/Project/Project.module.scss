@@ -50,8 +50,12 @@
 
 
         .figcaption {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             background-color: $midnight-color;
-            padding: 10px 0;
+            // padding: 10px 0;
+            min-height: 171px;
             border-radius: 10px;
             color: white;
             text-align: center;
@@ -59,11 +63,12 @@
             cursor: default;
 
             h1 {
-                margin: 0;
+                margin: 10px 0 0 0;
             }
 
             p {
                 font-size: 1.4rem;
+                padding: 0 15px;
             }
 
             ul {
@@ -75,7 +80,7 @@
                 list-style: none;
 
                 li {
-                    margin: 5px;
+                    margin: 0 5px 10px 0;
                     font-size: 1rem;
                     font-weight: 700;
                     background-color: $aeroblue-color;

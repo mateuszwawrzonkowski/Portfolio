@@ -34,7 +34,7 @@ $gradientBackground-color: linear-gradient(135deg, rgba(0, 255, 168, 1) 0%, rgba
 
 /*----------------ANIMATIONS-----------------*/
 
-@keyframes fadeIn {
+@keyframes fadeInLeft {
     0% {
         transform: translate(-100%, -50%);
         opacity: 0;
@@ -48,5 +48,49 @@ $gradientBackground-color: linear-gradient(135deg, rgba(0, 255, 168, 1) 0%, rgba
     100% {
         transform: translate(-50%, -50%);
         opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        transform: translate(100%, -50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, -50%);
+        opacity: 1;
+    }
+}
+
+@keyframes lightUpDown {
+    0% {
+        box-shadow: 0px 0px 15px 1px rgba(99, 234, 184, 1);
+    }
+
+    40% {
+        box-shadow: 0px 0px 15px 5px rgba(99, 234, 184, 1);
+    }
+
+    50% {
+        box-shadow: 0px 0px 20px 5px rgba(99, 234, 184, 1);
+    }
+
+    60% {
+        box-shadow: 0px 0px 15px 5px rgba(99, 234, 184, 1);
+    }
+
+    100% {
+        box-shadow: 0px 0px 15px 1px rgba(99, 234, 184, 1);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }

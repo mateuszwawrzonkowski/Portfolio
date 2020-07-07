@@ -14,9 +14,9 @@ const navLinks = [
 ]
 
 const contactItems = [
-    { name: "mateusz.wawrzonkowski@gmail.com", src: "mailto:mateusz.wawrzonkowski@gmail.com", icon: faEnvelope, color: "#D44638" },
-    { name: "facebook", src: "https://www.facebook.com/", icon: faFacebook, color: "#3B5998" },
-    { name: "linkedin", src: "https:/linkedin.com/", icon: faLinkedin, color: "#0e76a8" },
+    { name: "mateusz.wawrzonkowski@gmail.com", src: "mailto:mateusz.wawrzonkowski@gmail.com", icon: faEnvelope, color: "#ef3a25" },
+    { name: "facebook", src: "https://www.facebook.com/", icon: faFacebook, color: "#2d51a8" },
+    { name: "linkedin", src: "https:/linkedin.com/", icon: faLinkedin, color: "#007dbb" },
 ]
 
 const Contact = () => {

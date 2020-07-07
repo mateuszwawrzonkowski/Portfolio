@@ -10,7 +10,7 @@
     padding: 100px 0 100px 0;
     background: $gradientBackground-color;
 
-    @include mq(tablet-large) {
+    @include mq(desktop-medium) {
         padding: 0;
     }
 }

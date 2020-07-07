@@ -88,13 +88,13 @@
         }
 
         .circle {
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 80vw;
             width: 80vw;
             overflow: hidden;
-            border: 1px dashed #BEDEFF;
             border-radius: 50%;
 
             @include mq(smartphone-large) {
@@ -105,6 +105,20 @@
             @include mq(tablet-large) {
                 height: 40vh;
                 width: 40vh;
+            }
+
+            &__border {
+                position: absolute;
+                background-color: transparent;
+                border-radius: 50%;
+                border: 2px dashed #BEDEFF;
+                height: 95%;
+                width: 95%;
+
+                @include mq(tablet) {
+                    animation: rotate 60s linear infinite;
+                }
+
             }
 
             img {
