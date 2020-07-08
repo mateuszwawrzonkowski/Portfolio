@@ -1,5 +1,5 @@
 import React from 'react';
-
+import 'components/Skill/Skill.module.scss';
 const Skill = ({ title, icons }) => {
 
     const skillItems = icons.map(icon =>
