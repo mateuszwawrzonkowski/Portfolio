@@ -1,5 +1,5 @@
 import React from 'react';
-import 'components/Skill/Skill.module.scss';
+import styles from 'components/Skill/Skill.module.scss';
 const Skill = ({ title, icons }) => {
 
     const skillItems = icons.map(icon =>
@@ -14,7 +14,7 @@ const Skill = ({ title, icons }) => {
     return (
         <>
             <h1>{title}</h1>
-            <ul>
+            <ul className={styles.skills}>
                 {skillItems}
             </ul>
         </>
