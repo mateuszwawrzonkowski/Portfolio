@@ -4,7 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faPortrait } from '@fortawesome/free-solid-svg-icons';
 import Menu from 'components/Menu/Menu';
+import CV from 'assets/CV_MateuszWawrzonkowski_Eng.png';
 
 const navLinks = [
     { name: "home", to: "/" },
@@ -17,6 +19,7 @@ const contactItems = [
     { name: "mateusz.wawrzonkowski@gmail.com", src: "mailto:mateusz.wawrzonkowski@gmail.com", icon: faEnvelope, color: "#ef3a25" },
     { name: "facebook", src: "https://www.facebook.com/", icon: faFacebook, color: "#2d51a8" },
     { name: "linkedin", src: "https:/linkedin.com/", icon: faLinkedin, color: "#007dbb" },
+    { name: "curriculum vitae", src: CV, icon: faPortrait, color: "#fed835" },
 ]
 
 const Contact = () => {
