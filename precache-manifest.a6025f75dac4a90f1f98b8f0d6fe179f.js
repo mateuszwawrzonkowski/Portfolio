@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b39360b534d678e75e757c503dbc94f0",
+    "revision": "1ed3dd22c743ca7dd4301eaacb0bc352",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "d4b4c0189f15dcb064cc",
+    "revision": "0c0ae71dd545ba8b410a",
     "url": "/Portfolio/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "104cd42aadc58ea2141e",
+    "revision": "d49a8ac3b6dd3f5d5200",
     "url": "/Portfolio/static/css/main.e41d11bf.chunk.css"
   },
   {
-    "revision": "d4b4c0189f15dcb064cc",
-    "url": "/Portfolio/static/js/2.fd5edf5b.chunk.js"
+    "revision": "0c0ae71dd545ba8b410a",
+    "url": "/Portfolio/static/js/2.a27a4ec3.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/Portfolio/static/js/2.fd5edf5b.chunk.js.LICENSE.txt"
+    "url": "/Portfolio/static/js/2.a27a4ec3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "104cd42aadc58ea2141e",
-    "url": "/Portfolio/static/js/main.258c4f14.chunk.js"
+    "revision": "d49a8ac3b6dd3f5d5200",
+    "url": "/Portfolio/static/js/main.1b2bc1f0.chunk.js"
   },
   {
     "revision": "425e952245b014fc3ffb",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "cd3f051a74708dc23e824e356e07bb2d",
     "url": "/Portfolio/static/media/ActiveBox.cd3f051a.png"
+  },
+  {
+    "revision": "d0fa9c2b30c8f127d7cfd164b3f0ccbd",
+    "url": "/Portfolio/static/media/CV_MateuszWawrzonkowski_Eng.d0fa9c2b.png"
   },
   {
     "revision": "c0588f70f5befd02765a09dbe51c38cf",
