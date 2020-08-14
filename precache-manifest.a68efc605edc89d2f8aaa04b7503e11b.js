@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1ed3dd22c743ca7dd4301eaacb0bc352",
+    "revision": "3767c5940ec255e72c75432cf74ef8a2",
     "url": "/Portfolio/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "d49a8ac3b6dd3f5d5200",
+    "revision": "7487f9baa67ad8e007e9",
     "url": "/Portfolio/static/css/main.e41d11bf.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/js/2.a27a4ec3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d49a8ac3b6dd3f5d5200",
-    "url": "/Portfolio/static/js/main.1b2bc1f0.chunk.js"
+    "revision": "7487f9baa67ad8e007e9",
+    "url": "/Portfolio/static/js/main.01921ff5.chunk.js"
   },
   {
     "revision": "425e952245b014fc3ffb",
@@ -42,5 +42,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a2ddcb0a7659e529a49a51811b0d1456",
     "url": "/Portfolio/static/media/portfolio.a2ddcb0a.png"
+  },
+  {
+    "revision": "4fd54de52d6a99fdd31eedd2a07df4e8",
+    "url": "/Portfolio/static/media/restauratorium_wip.4fd54de5.jpg"
   }
 ]);
