@@ -18,9 +18,9 @@ const About = () => (
       <div className={styles.about}>
         <h1>about me</h1>
         <p>
-          Hi. My name is Mateusz. I&apos;m a third year student in computer science with a
-          specialization in Internet engineering.I worked for Sony Poland as a Sales Promoter and
-          then as aSales Bussines Support Specialist, but I decided to change my career. Computers
+          Hi! My name is Mateusz. I&apos;m a third year student in computer science with a
+          specialization in Internet engineering. I worked for Sony Poland as a Sales Promoter and
+          then as a Sales Bussines Support Specialist, but I decided to change my career. Computers
           has always been my passion - I started with 3D computer graphics, then I discovered
           programming. It gives me a lot of satisfaction, so I decided to combine my professional
           career with it. On this page you can check my
