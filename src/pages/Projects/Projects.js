@@ -4,7 +4,7 @@ import Menu from 'components/Menu/Menu';
 import Project from 'components/Project/Project';
 import portfolio from 'assets/Projects/portfolio.png';
 import activebox from 'assets/Projects/ActiveBox.png';
-import wip from 'assets/Projects/wip.png';
+import restauratoriumwip from 'assets/Projects/restauratorium_wip.jpg';
 
 const navLinks = [
   { name: 'home', to: '/' },
@@ -36,9 +36,9 @@ const projectsItems = [
     index: 3,
     name: 'Restauratorium',
     description: 'Work in progress. The application will allow to add restaurants to list and mark what places you visited, what restaurant you like or dislike.',
-    img: wip,
+    img: restauratoriumwip,
     technologies: ['Html', 'Css', 'Javascript', 'React', 'React Redux', 'Styled Componenets'],
-    githubLink: 'https://github.com/',
+    githubLink: 'https://github.com/mateuszwawrzonkowski/Restauratorium',
     pageLink: 'http://mwawrzonkowski.pl/#/projects',
   },
 ];
