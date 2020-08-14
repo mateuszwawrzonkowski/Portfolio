@@ -19,7 +19,7 @@ const About = () => (
         <h1>about me</h1>
         <p>
           Hi. My name is Mateusz. I&apos;m a third year student in computer science with a
-          specializationin Internet engineering.I worked for Sony Poland as a Sales Promoter and
+          specialization in Internet engineering.I worked for Sony Poland as a Sales Promoter and
           then as aSales Bussines Support Specialist, but I decided to change my career. Computers
           has always been my passion - I started with 3D computer graphics, then I discovered
           programming. It gives me a lot of satisfaction, so I decided to combine my professional

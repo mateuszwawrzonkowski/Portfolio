@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from 'components/Menu/Menu.module.scss';
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
@@ -34,7 +35,7 @@ const Menu = ({ showMenuButton, navLinks }) => {
           {
             showMenuButton
               ? (
-                <button onClick={handleClick} className={styles.menuButton}>
+                <button type="button" onClick={handleClick} className={styles.menuButton}>
                   {open
                     ? <FontAwesomeIcon icon={faTimes} />
                     : <FontAwesomeIcon icon={faBars} />}
@@ -52,6 +53,11 @@ const Menu = ({ showMenuButton, navLinks }) => {
       </div>
     </>
   );
+};
+
+Menu.propTypes = {
+  showMenuButton: PropTypes.element.isRequired,
+  navLinks: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default Menu;

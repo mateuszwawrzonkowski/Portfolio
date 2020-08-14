@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from 'components/Skill/Skill.module.scss';
+import PropTypes from 'prop-types';
 
 const Skill = ({ title, icons }) => {
   const skillItems = icons.map((icon) => (
@@ -19,6 +20,11 @@ const Skill = ({ title, icons }) => {
       </ul>
     </>
   );
+};
+
+Skill.propTypes = {
+  title: PropTypes.string.isRequired,
+  icons: PropTypes.string.isRequired,
 };
 
 export default Skill;
