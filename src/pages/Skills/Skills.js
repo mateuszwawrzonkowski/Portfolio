@@ -16,10 +16,10 @@ const SkillSections = [
   {
     title: 'Skills',
     Icons: [{ name: 'html5', icon: `https://img.icons8.com/color/${iconSize}/000000/html-5.png` },
-    { name: 'css3', icon: `https://img.icons8.com/color/${iconSize}/000000/css3.png` },
-    { name: 'sass', icon: `https://img.icons8.com/color/${iconSize}/000000/sass.png` },
-    { name: 'javascript es6', icon: `https://img.icons8.com/color/${iconSize}/000000/javascript.png` },
-    { name: 'react', icon: `https://img.icons8.com/officel/${iconSize}/000000/react.png` },
+      { name: 'css3', icon: `https://img.icons8.com/color/${iconSize}/000000/css3.png` },
+      { name: 'sass', icon: `https://img.icons8.com/color/${iconSize}/000000/sass.png` },
+      { name: 'javascript es6', icon: `https://img.icons8.com/color/${iconSize}/000000/javascript.png` },
+      { name: 'react', icon: `https://img.icons8.com/officel/${iconSize}/000000/react.png` },
     ],
   },
 

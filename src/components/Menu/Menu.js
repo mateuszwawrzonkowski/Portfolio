@@ -56,8 +56,12 @@ const Menu = ({ showMenuButton, navLinks }) => {
 };
 
 Menu.propTypes = {
-  showMenuButton: PropTypes.element.isRequired,
+  showMenuButton: PropTypes.bool,
   navLinks: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
+
+Menu.defaultProps = {
+  showMenuButton: false,
 };
 
 export default Menu;

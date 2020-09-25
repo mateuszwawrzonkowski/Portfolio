@@ -39,7 +39,7 @@ const projectsItems = [
     img: restauratorium,
     technologies: ['Html', 'Css', 'Javascript', 'React', 'React Redux', 'Styled Componenets'],
     githubLink: 'https://github.com/mateuszwawrzonkowski/Restauratorium',
-    pageLink: 'http://mwawrzonkowski.pl/#/projects',
+    pageLink: 'https://mateuszwawrzonkowski.github.io/Restauratorium/',
   },
 ];
 
