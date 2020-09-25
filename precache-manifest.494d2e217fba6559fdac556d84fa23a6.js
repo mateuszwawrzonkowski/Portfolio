@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8869d641efc6840641407ab4827746ca",
+    "revision": "6602a177bd601e04aa15d1b64e38929c",
     "url": "/Portfolio/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "91d7dc2f84f2dd57e856",
+    "revision": "94fc825863561e34042e",
     "url": "/Portfolio/static/css/main.e41d11bf.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/js/2.a27a4ec3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "91d7dc2f84f2dd57e856",
-    "url": "/Portfolio/static/js/main.7ff1f4f2.chunk.js"
+    "revision": "94fc825863561e34042e",
+    "url": "/Portfolio/static/js/main.80bd67b6.chunk.js"
   },
   {
     "revision": "425e952245b014fc3ffb",
@@ -44,7 +44,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/portfolio.a2ddcb0a.png"
   },
   {
-    "revision": "4fd54de52d6a99fdd31eedd2a07df4e8",
-    "url": "/Portfolio/static/media/restauratorium_wip.4fd54de5.jpg"
+    "revision": "9fa85d46fbb49402fae88f0ab9379a54",
+    "url": "/Portfolio/static/media/restauratorium.9fa85d46.jpg"
   }
 ]);
