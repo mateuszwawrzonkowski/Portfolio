@@ -5,7 +5,7 @@ import Project from 'components/Project/Project';
 import portfolio from 'assets/Projects/portfolio.png';
 import activebox from 'assets/Projects/ActiveBox.png';
 import restauratorium from 'assets/Projects/restauratorium.jpg';
-import gallery from 'assets/Projects/gallery-api.jpg';
+import gallery from 'assets/Projects/Gallery-api.jpg';
 
 const navLinks = [
   { name: 'home', to: '/' },
