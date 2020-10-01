@@ -5,6 +5,7 @@ import Project from 'components/Project/Project';
 import portfolio from 'assets/Projects/portfolio.png';
 import activebox from 'assets/Projects/ActiveBox.png';
 import restauratorium from 'assets/Projects/restauratorium.jpg';
+import gallery from 'assets/Projects/gallery-api.jpg';
 
 const navLinks = [
   { name: 'home', to: '/' },
@@ -35,11 +36,20 @@ const projectsItems = [
   {
     index: 3,
     name: 'Restauratorium',
-    description: 'Work in progress. The application will allow to add restaurants to list and mark what places you visited, what restaurant you like or dislike.',
+    description: 'Work in progress. The application allows to add restaurants to list and mark what places you visited, what restaurant you like or dislike.',
     img: restauratorium,
     technologies: ['Html', 'Css', 'Javascript', 'React', 'React Redux', 'Styled Componenets'],
     githubLink: 'https://github.com/mateuszwawrzonkowski/Restauratorium',
     pageLink: 'https://mateuszwawrzonkowski.github.io/Restauratorium/',
+  },
+  {
+    index: 4,
+    name: 'Gallery-api',
+    description: 'Easy gallery app using api. Created for learning purpose',
+    img: gallery,
+    technologies: ['Html', 'Css', 'Javascript', 'React', 'Styled Componenets', 'API'],
+    githubLink: 'https://github.com/mateuszwawrzonkowski/Gallery-api',
+    pageLink: 'https://mateuszwawrzonkowski.github.io/Gallery-api/',
   },
 ];
 

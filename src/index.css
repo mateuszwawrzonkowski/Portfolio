@@ -5,6 +5,23 @@
 *::after {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+   /* The emerging W3C standard
+that is currently Firefox-only */
+scrollbar-width: thin;
+scrollbar-color: #264182 #4488D1;
+}
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+*::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, rgba(76,214,226,1) 0%, rgba(114,194,255,1) 100%);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #496F95;
+  border-radius: 20px;
+  border: 2px solid #63EAB8;
 }
 
 html {
