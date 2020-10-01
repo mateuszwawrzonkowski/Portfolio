@@ -8,7 +8,9 @@
     @include mq(smartphone-large) {
         margin-bottom: 0;
     }
-
+    @include mq(desktop-large) {
+        margin: 0 10px;
+    }
     figure {
         margin: 10px;
 
