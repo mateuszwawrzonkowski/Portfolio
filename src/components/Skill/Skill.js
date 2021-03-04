@@ -3,11 +3,11 @@ import styles from 'components/Skill/Skill.module.scss';
 import PropTypes from 'prop-types';
 
 const Skill = ({ title, icons }) => {
-  const skillItems = icons.map((icon) => (
-    <li key={icon.name}>
+  const skillItems = icons.map(({ name, icon }) => (
+    <li key={name}>
       <figure>
-        <img src={icon.icon} alt={icon.name} />
-        <figcaption>{icon.name}</figcaption>
+        <img src={icon} alt={name} />
+        <figcaption>{name}</figcaption>
       </figure>
     </li>
   ));

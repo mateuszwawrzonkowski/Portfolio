@@ -34,7 +34,7 @@ const About = () => (
           page.
           <br />
           <br />
-          I am currently looking for a job or an internship for the position of Front End Developer.
+          I am currently looking for a job for the position of Junior Front End Developer (especially in React).
           <br />
           <br />
           I also love to cook, eat well and travel. Have a nice day!

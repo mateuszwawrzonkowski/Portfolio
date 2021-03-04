@@ -31,11 +31,13 @@ const contactItems = [
 ];
 
 const Contact = () => {
-  const contact = contactItems.map((item) => (
-    <li key={item.name}>
-      <a href={item.src}>
-        <FontAwesomeIcon icon={item.icon} style={{ color: `${item.color}` }} />
-        {item.name}
+  const contact = contactItems.map(({
+    name, src, icon, color,
+  }) => (
+    <li key={name}>
+      <a href={src}>
+        <FontAwesomeIcon icon={icon} style={{ color: `${color}` }} />
+        {name}
       </a>
     </li>
   ));

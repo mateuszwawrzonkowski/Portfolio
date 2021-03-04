@@ -4,7 +4,9 @@ import Menu from 'components/Menu/Menu';
 import Project from 'components/Project/Project';
 import portfolio from 'assets/Projects/portfolio.png';
 import activebox from 'assets/Projects/ActiveBox.png';
-import restauratorium from 'assets/Projects/restauratorium.jpg';
+// import restauratorium from 'assets/Projects/restauratorium.jpg';
+import enyo from 'assets/Projects/enyo.jpg';
+import foodmonkey from 'assets/Projects/foodmonkey.jpg';
 import gallery from 'assets/Projects/Gallery-api.jpg';
 
 const navLinks = [
@@ -35,15 +37,33 @@ const projectsItems = [
   },
   {
     index: 3,
-    name: 'Restauratorium',
-    description: 'Work in progress. The application allows to add restaurants to list and mark what places you visited, what restaurant you like or dislike.',
-    img: restauratorium,
-    technologies: ['Html', 'Css', 'Javascript', 'React', 'React Redux', 'Styled Componenets'],
-    githubLink: 'https://github.com/mateuszwawrzonkowski/Restauratorium',
-    pageLink: 'https://mateuszwawrzonkowski.github.io/Restauratorium/',
+    name: 'Foodmonkey',
+    description: 'Only for mobile phones. The application allows to check nearest restaurants in your city. If you are signed up and logged in you can rate restaurants. For develop you can check two cities: Warszawa and Wrocław',
+    img: foodmonkey,
+    technologies: ['Html', 'Css', 'Javascript', 'React', 'React Redux', 'Firebase', 'Styled Componenets'],
+    // githubLink: 'https://github.com/mateuszwawrzonkowski/Restauratorium',
+    pageLink: 'https://foodmonkey.netlify.app/',
   },
+  // {
+  //   index: 3,
+  //   name: 'Restauratorium',
+  //   description: 'Work in progress. The application allows to add restaurants to list and mark what places you visited, what restaurant you like or dislike.',
+  //   img: restauratorium,
+  //   technologies: ['Html', 'Css', 'Javascript', 'React', 'React Redux', 'Styled Componenets'],
+  //   githubLink: 'https://github.com/mateuszwawrzonkowski/Restauratorium',
+  //   pageLink: 'https://mateuszwawrzonkowski.github.io/Restauratorium/',
+  // },
   {
     index: 4,
+    name: 'Enyo',
+    description: 'Landing page based on Enyo template',
+    img: enyo,
+    technologies: ['Html', 'Css', 'Javascript'],
+    // githubLink: 'https://github.com/mateuszwawrzonkowski/Restauratorium',
+    pageLink: 'https://cranky-haibt-fc15e7.netlify.app/',
+  },
+  {
+    index: 5,
     name: 'Gallery-api',
     description: 'Easy gallery app using api. Created for learning purpose',
     img: gallery,
@@ -54,15 +74,17 @@ const projectsItems = [
 ];
 
 const Projects = () => {
-  const projects = projectsItems.map((item) => (
+  const projects = projectsItems.map(({
+    index, name, description, img, technologies, githubLink, pageLink,
+  }) => (
     <Project
-      key={item.index}
-      name={item.name}
-      description={item.description}
-      img={item.img}
-      technologies={item.technologies}
-      githubLink={item.githubLink}
-      pageLink={item.pageLink}
+      key={index}
+      name={name}
+      description={description}
+      img={img}
+      technologies={technologies}
+      githubLink={githubLink}
+      pageLink={pageLink}
     />
   ));
 

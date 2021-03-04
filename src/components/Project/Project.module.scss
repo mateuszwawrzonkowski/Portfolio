@@ -8,9 +8,11 @@
     @include mq(smartphone-large) {
         margin-bottom: 0;
     }
+
     @include mq(desktop-large) {
         margin: 0 10px;
     }
+
     figure {
         margin: 10px;
 
@@ -56,7 +58,7 @@
             flex-direction: column;
             justify-content: center;
             background-color: $midnight-color;
-            min-height: 171px;
+            min-height: 237px;
             border-radius: 10px;
             color: white;
             text-align: center;

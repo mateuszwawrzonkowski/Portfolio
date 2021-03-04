@@ -20,6 +20,9 @@ const SkillSections = [
       { name: 'sass', icon: `https://img.icons8.com/color/${iconSize}/000000/sass.png` },
       { name: 'javascript es6', icon: `https://img.icons8.com/color/${iconSize}/000000/javascript.png` },
       { name: 'react', icon: `https://img.icons8.com/officel/${iconSize}/000000/react.png` },
+      { name: 'react redux', icon: `https://img.icons8.com/color/${iconSize}/000000/redux.png` },
+      { name: 'firebase', icon: `https://img.icons8.com/color/${iconSize}/000000/firebase.png` },
+
     ],
   },
 
@@ -39,19 +42,21 @@ const SkillSections = [
     title: 'Additional skills',
     Icons: [
       { name: 'C#', icon: `https://img.icons8.com/color/${iconSize}/000000/c-sharp-logo.png` },
-      { name: 'SQL', icon: `https://img.icons8.com/nolan/${iconSize}/sql.png` },
+      { name: 'SQL', icon: `https://img.icons8.com/ios/50/${iconSize}/sql.png` },
+      { name: 'PHP', icon: `https://img.icons8.com/dusk/${iconSize}/000000/php-logo.png` },
+      { name: 'Wordpress', icon: `https://img.icons8.com/doodle/${iconSize}/000000/wordpress--v1.png` },
     ],
   },
 ];
 
 
 const Skills = () => {
-  const SkillsSections = SkillSections.map((item) => (
+  const SkillsSections = SkillSections.map(({ Icons, title }) => (
     <Skill
-      key={item.Icons}
-      name={item.Icons}
-      title={item.title}
-      icons={item.Icons}
+      key={Icons}
+      name={Icons}
+      title={title}
+      icons={Icons}
     />
   ));
 

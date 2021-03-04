@@ -10,14 +10,14 @@ const navLinks = [
 ];
 
 const Navigation = () => {
-  const navigation = navLinks.map((item) => (
-    <li key={item.name} className={styles.navigation__Item}>
+  const navigation = navLinks.map(({ name, to }) => (
+    <li key={name} className={styles.navigation__Item}>
       <NavLink
-        to={item.to}
+        to={to}
         className={styles.navigation__Item__Link}
         activeClassName={styles.navItemLinkActive}
       >
-        {item.name}
+        {name}
 
       </NavLink>
     </li>

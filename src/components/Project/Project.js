@@ -17,12 +17,14 @@ const Project = ({
         <figure>
           <div className={styles.projectImg}>
             <div className={styles.buttons}>
-              <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon
-                  icon={faGithubSquare}
-                />
-
-              </a>
+              { githubLink
+                ? (
+                  <a href={githubLink} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon
+                      icon={faGithubSquare}
+                    />
+                  </a>
+                ) : null}
               <a href={pageLink} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={faPlayCircle}
