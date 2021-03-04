@@ -1,31 +1,32 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.6d635571.chunk.css",
-    "main.js": "/Portfolio/static/js/main.e791f8b5.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.e791f8b5.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.f45870e3.chunk.css",
+    "main.js": "/Portfolio/static/js/main.19ba5110.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.19ba5110.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.db605a1d.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.db605a1d.js.map",
     "static/css/2.764ccc25.chunk.css": "/Portfolio/static/css/2.764ccc25.chunk.css",
-    "static/js/2.be7779d6.chunk.js": "/Portfolio/static/js/2.be7779d6.chunk.js",
-    "static/js/2.be7779d6.chunk.js.map": "/Portfolio/static/js/2.be7779d6.chunk.js.map",
+    "static/js/2.d285f3db.chunk.js": "/Portfolio/static/js/2.d285f3db.chunk.js",
+    "static/js/2.d285f3db.chunk.js.map": "/Portfolio/static/js/2.d285f3db.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.8a0e06ff2d66e87219d58c399f63f4ea.js": "/Portfolio/precache-manifest.8a0e06ff2d66e87219d58c399f63f4ea.js",
+    "precache-manifest.ed77c0640f0b0ab73a801e9c6d913a4e.js": "/Portfolio/precache-manifest.ed77c0640f0b0ab73a801e9c6d913a4e.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/Portfolio/static/css/2.764ccc25.chunk.css.map",
-    "static/css/main.6d635571.chunk.css.map": "/Portfolio/static/css/main.6d635571.chunk.css.map",
-    "static/js/2.be7779d6.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.be7779d6.chunk.js.LICENSE.txt",
+    "static/css/main.f45870e3.chunk.css.map": "/Portfolio/static/css/main.f45870e3.chunk.css.map",
+    "static/js/2.d285f3db.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.d285f3db.chunk.js.LICENSE.txt",
     "static/media/ActiveBox.png": "/Portfolio/static/media/ActiveBox.cd3f051a.png",
     "static/media/CV_MateuszWawrzonkowski_Eng.png": "/Portfolio/static/media/CV_MateuszWawrzonkowski_Eng.d0fa9c2b.png",
     "static/media/Gallery-api.jpg": "/Portfolio/static/media/Gallery-api.a63c17bd.jpg",
+    "static/media/enyo.jpg": "/Portfolio/static/media/enyo.82d0af36.jpg",
     "static/media/face.png": "/Portfolio/static/media/face.c0588f70.png",
-    "static/media/portfolio.png": "/Portfolio/static/media/portfolio.a2ddcb0a.png",
-    "static/media/restauratorium.jpg": "/Portfolio/static/media/restauratorium.9fa85d46.jpg"
+    "static/media/foodmonkey.jpg": "/Portfolio/static/media/foodmonkey.eeabf820.jpg",
+    "static/media/portfolio.png": "/Portfolio/static/media/portfolio.a2ddcb0a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.db605a1d.js",
     "static/css/2.764ccc25.chunk.css",
-    "static/js/2.be7779d6.chunk.js",
-    "static/css/main.6d635571.chunk.css",
-    "static/js/main.e791f8b5.chunk.js"
+    "static/js/2.d285f3db.chunk.js",
+    "static/css/main.f45870e3.chunk.css",
+    "static/js/main.19ba5110.chunk.js"
   ]
 }
