@@ -6,7 +6,7 @@ import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 import Menu from 'components/Menu/Menu';
-import CV from 'assets/CV_MateuszWawrzonkowski_Eng.png';
+import CV from 'assets/CV_MateuszWawrzonkowski_Pl.png';
 
 const navLinks = [
   { name: 'home', to: '/' },
