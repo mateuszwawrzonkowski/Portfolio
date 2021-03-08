@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "35961dbaa4ad20d6d35bb5c32b33360e",
+    "revision": "502c69d7d186ff9718b3e22d5eb6e9f8",
     "url": "./index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "1988360666a45cd9507a",
+    "revision": "ad40a6be054fe8e04761",
     "url": "./static/css/main.f45870e3.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/js/2.f5fdcf61.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1988360666a45cd9507a",
-    "url": "./static/js/main.63195982.chunk.js"
+    "revision": "ad40a6be054fe8e04761",
+    "url": "./static/js/main.46658101.chunk.js"
   },
   {
     "revision": "18c309d16c6c37590b3f",
@@ -33,7 +33,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "8000c5859b4f6c7593158d01d618744c",
-    "url": "./static/media/CV_MateuszWawrzonkowski_Pl.8000c585.png"
+    "url": "./static/media/CV_MateuszWawrzonkowski.8000c585.png"
   },
   {
     "revision": "a63c17bdc99758b2c9f0087114080848",
